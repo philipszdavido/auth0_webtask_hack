@@ -1,18 +1,18 @@
 # auth0_webtask_hack
 A [IFTTT(if this, then that)](https://ifttt.com)-based [Webtask](https://webtask.io) Slack bot that sends message to the general channel of a Slack group when a user tweets, retweets or replies to a tweet in [Twitter](https://twitter.com). 
 
-# Technologies
+## Technologies
 1. [Webtask.io](https://webtask.io)
 1. [Node.js](https://nodejs.org)
 1. [Slack bot](https://my.slack.com/services/new/add)
 1. [Twitter](https://twitter.com)
 1. [IFTTT](https://ifttt.com)
 
-# App Overview
+## App Overview
 
 IFTTT sends `Twitter` triggers[tweets, RT and replies] to ===> `Webtask.io` URL, it sends the payload to ===> `Slack` group channel.
 
-# Usage
+## Usage
 1. Create a [Twitter](https://twitter.com) account if you don't have one.
 1. Create a [Slack](slack.com) group and add a [Slack bot](https://my.slack.com/services/new/add) to the group.
 1. Install the [Webtask.io](webtask.io) CLI utility `wt-cli`, if you dont't have it installed:
@@ -34,7 +34,7 @@ IFTTT sends `Twitter` triggers[tweets, RT and replies] to ===> `Webtask.io` URL,
 
 1. Create a [IFTTT](ifttt.com) Twitter (tweet, retweet, and replies) trigger and link the webhook to the URL generated from the above command.
 
-# How to create the IFTTT Twitter applet
+## How to create the IFTTT Twitter applet
 To create the `IFTTT Twitter` trigger, follow these steps:
 
 1. click on `New Applet` button.
@@ -54,6 +54,9 @@ To create the `IFTTT Twitter` trigger, follow these steps:
 1. Click on the `Finish` button on the next `Review and finish window`.
 1. Hooray!! We now have an `ITFFF Twitter tweet, RT and repiles` trigger up and running.
 1. Post a tweet to test.
+
+## IFTTT Twitter/Slack webtask bot in action
+![](tweetbt.png)
 
 ### Contribute
 1. Fork this repository
