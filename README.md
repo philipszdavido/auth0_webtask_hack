@@ -15,7 +15,7 @@ IFTTT sends `Twitter` triggers[tweets, RT and replies] to ===> `Webtask.io` URL,
 ## Usage
 1. Create a [Twitter](https://twitter.com) account if you don't have one.
 1. Create a [Slack](slack.com) group and add a [Slack bot](https://my.slack.com/services/new/add) to the group.
-1. Install the [Webtask.io](webtask.io) CLI utility `wt-cli`, if you dont't have it installed:
+1. Install the [Webtask.io](webtask.io) CLI utility `wt-cli`, if you don't have it installed:
 
         npm i wt-cli -g
         wt init
@@ -28,13 +28,13 @@ IFTTT sends `Twitter` triggers[tweets, RT and replies] to ===> `Webtask.io` URL,
 
         cd auth0_webtask_hack
 
-1. To deploy alongisde with your Slack bot token, run:
+1. To deploy alongside your Slack bot token, run:
 
         wt create --secret TOKEN=<YOUR_SLACK_BOT_TOKEN_HERE> webtask.js
 
 1. Create a [IFTTT](ifttt.com) Twitter (tweet, retweet, and replies) trigger and link the webhook to the URL generated from the above command.
 
-## How to create the IFTTT Twitter applet
+## How to create the IFTTT Twitter trigger
 To create the `IFTTT Twitter` trigger, follow these steps:
 
 1. click on `New Applet` button.
