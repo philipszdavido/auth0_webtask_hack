@@ -12,6 +12,14 @@ An [IFTTT(if this, then that)](https://ifttt.com)-based [Webtask](https://webtas
 
 IFTTT sends `Twitter` triggers[tweets, RT and replies] to ===> `Webtask.io` URL, it sends the payload to ===> `Slack` group channel.
 
+## Requirements
+
+* [Node.js v >= 6.0.0](https://nodejs.org)
+* [Twitter account](https://twitter.com)
+* [Slack group](https://slack.com)
+* [Webtask CLI](https://webtask.io/cli)
+* [IFTTT.com account](https://ifttt.com)
+
 ## Usage
 1. Create a [Twitter](https://twitter.com) account if you don't have one.
 1. Create a [Slack](slack.com) group and add a [Slack bot](https://my.slack.com/services/new/add) to the group.
@@ -27,6 +35,10 @@ IFTTT sends `Twitter` triggers[tweets, RT and replies] to ===> `Webtask.io` URL,
 1. Move into the directory from your terminal:
 
         cd auth0_webtask_hack
+
+1. Install the dependencies:
+
+        npm install
 
 1. To deploy alongside your Slack bot token, run:
 
