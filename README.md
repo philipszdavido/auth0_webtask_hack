@@ -56,7 +56,7 @@ To create the `IFTTT Twitter` trigger, follow these steps:
 1. Post a tweet to test.
 
 ## IFTTT Twitter/Slack webtask bot in action
-![](tweetbt.png)
+![](tweetbot.png)
 
 ### Contribute
 1. Fork this repository
