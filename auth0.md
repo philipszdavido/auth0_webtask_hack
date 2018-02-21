@@ -22,4 +22,5 @@ One feature of auth0 I like so much is the **Lock.js**.
 Why? It stops you from reinventing the wheel. You know there stuffs done every time whenever you pick up a project, that is building the login and registration pages, whether a Web-, Mobile- or Desktop-based project. Users authentication is a must, you must find a way to register your users and authenticate them. Though I have not used it before, I think the Lock widget is really cool reading through the docs about the widget. What came to my mind was "Now, I don't have to bother or stress myself again about building the login and registration pages of any project I embark on". All I have to do is pull in the widget library and configure the mode I want, end of frontend auth. It has saved me time and energy. I have a Medium draft that I will be publishing soon, it centers on using Lock.js, Webtask.io, Angular, and Auth0 auth. system to build a TV Series Tracker app. I think it will be a cool stuff, bringing the best libraries, frameworks, and auth. systems together in one mix.
 
 ## Hack something (whatever you want) using webtask.io
- 
+ I implemented a IFTTT(if this, then that)-based Webtask Slack bot that sends message to the general channel of a Slack group when a user tweets, retweets or replies to a tweet in Twitter.
+ Link: https://github.com/philipszdavido/auth0_webtask_hack
