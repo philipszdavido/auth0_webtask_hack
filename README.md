@@ -37,8 +37,9 @@ IFTTT sends `Twitter` triggers[tweets, RT and replies] to ===> `Webtask.io` URL,
 ## How to create the IFTTT Twitter trigger
 To create the `IFTTT Twitter` trigger, follow these steps:
 
-1. click on `New Applet` button.
-1. on the screen that show, click on `✚this` of this `if **✚this** then that`.
+1. Log in to your [ITFFF.com](itfff.com) account, if you don't have accout there just sign up. Also, make sure you link your [Twitter](twitter.com) account.
+1. click on `New Applet` button. If you don't see it, go to this link: https://itfff.com/create
+1. on the screen that shows, click on `✚this` of this `if **✚this** then that`.
 1. on the `Choose a service` window, click on the `Twitter` button
 1. Select `New tweet by you This Trigger fires every time you post a new tweet.` on the `Choose trigger` window that shows up.
 1. Now on the `Complete trigger fields` window, check the `retweets` and `@replies` so that you can also get the trigger when you RT or replies to a tweet. click on `Create trigger` button when you are done.
