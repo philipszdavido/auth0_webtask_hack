@@ -1,18 +1,15 @@
 {
-  "name": "auth0_webtask.io_hack",
-  "version": "1.0.0",
-  "description": "",
-  "main": "cli.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Chidume Nnamdi <kurtwanger40@gmail.com>",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.18.0",
-    "commander": "^2.14.1",
-    "core-js": "^2.5.3",
-    "inquirer": "^5.1.0"
-  }
+    "name": "auth0_webtask.io_hack",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "deploy": "wt create webtask.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Chidume Nnamdi <kurtwanger40@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.18.0"
+    }
 }
