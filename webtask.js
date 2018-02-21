@@ -2,14 +2,14 @@
 const axios = require('axios');
 const slackURL = 'https://slack.com/api/chat.postMessage';
 
-const token = "xoxb-317584411232-Vr5PKZqx3USy33bOQb7sKrUG"
+let token
 const config = {
     headers: {
         'Authorization': 'Bearer ' + token
     }
 }
 
-const callAPI = (data) => {
+const slackAPI = (data, cb) => {
     axios.post(slackURL, data, config).then((res) => {
         console.log(res.data)
         cb(null)
@@ -19,6 +19,7 @@ const callAPI = (data) => {
 };
 
 module.exports = (ctx, cb) => {
+    token = ctx.data.TOKEN
     let obj = {
         as_user: false,
         username: 'tweets_bot',
@@ -26,13 +27,14 @@ module.exports = (ctx, cb) => {
         channel: "general",
         text: "You tweeted this ticket:",
         attachments: [{
-            title: ctx.data.tweet,
+            title: ctx.data.text,
             fields: [
-                { title: 'Tweeted BY: ', value: ctx.data.username },
-                { title: 'Created: ', value: ctx.data.created }
+                { title: `Tweeted By: @${ctx.data.username}` },
+                { title: `Tweet Link: ${ctx.data.tweet_link}` },
+                { title: `Created: ${ctx.data.created}` }
             ]
         }]
     }
 
-    callAPI(obj)
+    slackAPI(obj, cb)
 }
